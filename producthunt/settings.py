@@ -31,8 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    'accounts.apps.AccountsConfig',
-    'products.apps.ProductsConfig',
+    'accounts.apps.AccountsConfig',    
     'newproduct.apps.NewproductConfig',
     'django.contrib.admin',
     'django.contrib.auth',
@@ -130,3 +129,7 @@ os.path.join(BASE_DIR, 'producthunt/static/')
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
 STATIC_URL = '/static/'
+
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+MEDIA_URL = '/media/'
